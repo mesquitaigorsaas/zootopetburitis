@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zootopet Pet Shop — Buritis, Belo Horizonte | Banho e tosa e veterinário</title>
+<meta name="description" content="Zootopet, pet shop no Buritis em Belo Horizonte. Banho e tosa, atendimento veterinário e loja com rações, petiscos e acessórios. Nota 4,8 no Google. Agende pelo WhatsApp (31) 98397-6527.">
+<meta name="theme-color" content="#4DBDEB">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="64x64" href="img/icons/favicon-64.png">
+<link rel="icon" type="image/png" sizes="192x192" href="img/icons/icon-192.png">
+<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+<meta property="og:title" content="Zootopet Pet Shop — Buritis, BH">
+<meta property="og:description" content="Banho e tosa, atendimento veterinário e loja. Seu pet em boas mãos, sempre!">
+<meta property="og:image" content="img/logo.png">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["PetStore", "VeterinaryCare"],
+  "name": "Zootopet",
+  "image": "img/logo.png",
+  "telephone": "+55 31 98397-6527",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Aggeo Pio Sobrinho, 295 - Loja 5 - Buritis",
+    "addressLocality": "Belo Horizonte",
+    "addressRegion": "MG",
+    "postalCode": "30575-834",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -19.9756288, "longitude": -43.9773685 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "110" },
+  "sameAs": ["https://www.instagram.com/zootopet/"]
+}
+</script>
+<style>
+:root{
+  --azul:#2BA8E0;
+  --azul-esc:#1A63B8;
+  --azul-noite:#12307A;
+  --azul-claro:#E2F4FD;
+  --agua:#CDEFFC;
+  --amarelo:#FFD21F;
+  --amarelo-esc:#E9B800;
+  --laranja:#F39A2B;
+  --laranja-esc:#D9771A;
+  --dourado:#F2CF8E;
+  --dourado-esc:#D9A85B;
+  --vermelho:#E0322B;
+  --tinta:#14233F;
+  --texto:#2F4058;
+  --suave:#5B6E86;
+  --creme:#F6FBFF;
+  --verde-wa:#25D366;
+  --verde-wa-esc:#1DA851;
+  --raio:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden;scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'Nunito',system-ui,sans-serif;color:var(--texto);background:var(--creme);line-height:1.6;overflow-x:hidden;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:'Fredoka',sans-serif;color:var(--tinta);line-height:1.12;letter-spacing:-.01em}
+.container{width:min(1160px,100% - 32px);margin-inline:auto}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.08rem;padding:15px 26px;border-radius:999px;border:3px solid var(--tinta);transition:transform .15s ease,box-shadow .15s ease;cursor:pointer;white-space:nowrap}
+.btn svg{width:22px;height:22px;flex-shrink:0}
+.btn-wa{background:var(--verde-wa);color:#fff;box-shadow:4px 4px 0 var(--tinta)}
+.btn-branco{background:#fff;color:var(--tinta);box-shadow:4px 4px 0 var(--tinta)}
+.btn-laranja{background:var(--laranja);color:#fff;box-shadow:4px 4px 0 var(--tinta)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--tinta)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--tinta)}
+
+/* topo */
+.topo{position:sticky;top:0;z-index:50;background:rgba(246,251,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:3px solid var(--tinta)}
+.topo .container{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.marca{display:flex;align-items:center;gap:10px}
+.marca img{width:auto;height:54px;object-fit:contain}
+.marca span{font-family:'Fredoka',sans-serif;font-weight:700;font-size:1.35rem;color:var(--azul-esc);line-height:1;text-transform:uppercase;letter-spacing:.01em}
+.marca small{display:block;font-family:'Nunito',sans-serif;font-size:.72rem;font-weight:800;color:var(--suave);letter-spacing:.04em;text-transform:uppercase;margin-top:4px}
+.menu{display:flex;align-items:center;gap:24px}
+.menu a{font-weight:700;color:var(--tinta);font-size:.98rem;position:relative}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;height:3px;width:0;background:var(--azul);border-radius:3px;transition:width .2s}
+.menu a:not(.btn):hover::after{width:100%}
+.menu .btn{padding:10px 18px;font-size:.98rem;box-shadow:3px 3px 0 var(--tinta)}
+.hamburguer{display:none;width:46px;height:46px;border-radius:12px;border:3px solid var(--tinta);background:var(--azul-claro);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.hamburguer span{display:block;width:20px;height:3px;background:var(--tinta);border-radius:3px;transition:.25s}
+.hamburguer[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.hamburguer[aria-expanded="true"] span:nth-child(2){opacity:0}
+.hamburguer[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(165deg,#D4F3FE 0%,#A6E2FA 45%,#7DD0F4 100%);overflow:hidden;border-bottom:3px solid var(--tinta)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.35;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%23ffffff'%3E%3Cellipse cx='30' cy='34' rx='9' ry='11'/%3E%3Cellipse cx='50' cy='24' rx='8' ry='10'/%3E%3Cellipse cx='70' cy='34' rx='9' ry='11'/%3E%3Cpath d='M50 44c-14 0-24 14-24 22 0 7 6 9 12 8 5-1 8-3 12-3s7 2 12 3c6 1 12-1 12-8 0-8-10-22-24-22z'/%3E%3C/g%3E%3C/svg%3E");background-size:120px;transform:rotate(-12deg) scale(1.4)}
+.hero .container{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:40px;padding:64px 0 80px}
+.selo-google{display:inline-flex;align-items:center;gap:10px;background:#fff;border:3px solid var(--tinta);border-radius:999px;padding:7px 16px 7px 8px;font-weight:800;color:var(--tinta);box-shadow:3px 3px 0 var(--tinta);font-size:.95rem}
+.selo-google .g{width:30px;height:30px;border-radius:50%;background:#fff;display:grid;place-items:center;border:2px solid #eee}
+.estrelas{color:#F5A300;letter-spacing:1px;font-size:1.05rem}
+.hero h1{font-size:clamp(2.3rem,5.2vw,3.9rem);font-weight:700;margin:22px 0 18px;color:var(--azul-noite);text-shadow:3px 3px 0 #fff}
+.hero h1 .sub{display:inline-block;background:var(--amarelo);color:var(--azul-noite);padding:0 14px 4px;border-radius:14px;transform:rotate(-1.5deg);text-shadow:none;border:3px solid var(--tinta);box-shadow:4px 4px 0 var(--tinta)}
+.hero p.lead{font-size:1.2rem;color:#1F3A66;font-weight:600;max-width:560px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.hero .mini{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.hero .mini span{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.7);border:2px solid var(--tinta);color:var(--tinta);font-weight:800;font-size:.92rem;padding:6px 14px;border-radius:999px}
+.hero-visual{position:relative;display:grid;place-items:center;grid-template-columns:100%}
+.hero-visual .nuvem{position:absolute;inset:8% 0 14%;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.95),rgba(255,255,255,.55) 60%,rgba(255,255,255,0))}
+.hero-visual img{position:relative;width:100%;max-width:560px;height:auto;filter:drop-shadow(6px 8px 0 rgba(18,48,122,.25));animation:balanca 5s ease-in-out infinite}
+@keyframes balanca{0%,100%{transform:rotate(-1.5deg) translateY(0)}50%{transform:rotate(1.5deg) translateY(-8px)}}
+.status{position:absolute;left:50%;transform:translateX(-50%);bottom:-14%;white-space:nowrap;background:#fff;border:3px solid var(--tinta);border-radius:16px;padding:10px 14px;box-shadow:4px 4px 0 var(--tinta);font-weight:800;color:var(--tinta);font-size:.9rem;display:flex;align-items:center;gap:8px}
+.status .ponto{width:12px;height:12px;border-radius:50%;background:#aaa}
+.status.aberto .ponto{background:#1DB954;box-shadow:0 0 0 4px rgba(29,185,84,.2);animation:pulsa 1.6s infinite}
+.status.fechado .ponto{background:var(--vermelho)}
+@keyframes pulsa{50%{box-shadow:0 0 0 8px rgba(29,185,84,0)}}
+
+/* bolhas de sabão */
+.bolhas{position:absolute;inset:0;pointer-events:none;z-index:1}
+.bolhas i{position:absolute;bottom:-60px;border-radius:50%;background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.95) 0 8%,rgba(255,255,255,.25) 9% 55%,rgba(180,240,255,.35) 56% 70%,rgba(255,255,255,.7) 71% 74%,transparent 75%);animation:sobe linear infinite}
+@keyframes sobe{0%{transform:translate(0,0) scale(.7);opacity:0}8%{opacity:1}50%{transform:translate(28px,-50vh) scale(1)}92%{opacity:1}100%{transform:translate(-18px,-105vh) scale(1.08);opacity:0}}
+
+/* faixa */
+.faixa{background:var(--amarelo);color:var(--azul-noite);border-bottom:3px solid var(--tinta);overflow:hidden;white-space:nowrap}
+.faixa .trilho{display:inline-flex;animation:rola 34s linear infinite;padding:14px 0}
+.faixa span{font-family:'Fredoka',sans-serif;font-weight:600;font-size:1.15rem;padding:0 20px;display:inline-flex;align-items:center;gap:20px}
+.faixa span::after{content:"";width:18px;height:18px;background:var(--azul-esc);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cellipse cx='6' cy='9' rx='2.4' ry='3'/%3E%3Cellipse cx='10' cy='5' rx='2.4' ry='3'/%3E%3Cellipse cx='14.5' cy='5' rx='2.4' ry='3'/%3E%3Cellipse cx='18.5' cy='9' rx='2.4' ry='3'/%3E%3Cpath d='M12.2 11c-3.6 0-6.4 4-6.4 6.3 0 2 1.6 2.7 3.2 2.5 1.3-.2 2-.8 3.2-.8s1.9.6 3.2.8c1.6.2 3.2-.5 3.2-2.5 0-2.3-2.8-6.3-6.4-6.3z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cellipse cx='6' cy='9' rx='2.4' ry='3'/%3E%3Cellipse cx='10' cy='5' rx='2.4' ry='3'/%3E%3Cellipse cx='14.5' cy='5' rx='2.4' ry='3'/%3E%3Cellipse cx='18.5' cy='9' rx='2.4' ry='3'/%3E%3Cpath d='M12.2 11c-3.6 0-6.4 4-6.4 6.3 0 2 1.6 2.7 3.2 2.5 1.3-.2 2-.8 3.2-.8s1.9.6 3.2.8c1.6.2 3.2-.5 3.2-2.5 0-2.3-2.8-6.3-6.4-6.3z'/%3E%3C/svg%3E") center/contain no-repeat}
+@keyframes rola{to{transform:translateX(-50%)}}
+
+/* seções */
+section{padding:90px 0}
+.titulo{text-align:center;max-width:740px;margin:0 auto 50px}
+.etiqueta{display:inline-block;font-family:'Fredoka',sans-serif;font-weight:600;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;color:var(--azul-esc);background:var(--azul-claro);border:2px solid var(--azul);padding:4px 14px;border-radius:999px;margin-bottom:14px}
+.titulo h2{font-size:clamp(2rem,4.2vw,2.9rem);font-weight:700}
+.titulo h2 em,.texto h2 em{font-style:normal;color:var(--azul)}
+.titulo p{margin-top:14px;font-size:1.1rem;color:var(--suave)}
+
+/* números */
+.numeros{background:#fff;border-bottom:3px solid var(--tinta);padding:0}
+.numeros .container{display:grid;grid-template-columns:repeat(4,1fr)}
+.numero{padding:30px 18px;text-align:center;border-right:3px dashed #D3E9F5}
+.numero:last-child{border-right:0}
+.numero strong{display:block;font-family:'Fredoka',sans-serif;font-size:2.3rem;color:var(--azul);line-height:1.1}
+.numero strong small{font-size:1.2rem;color:#F5A300}
+.numero span{font-weight:700;color:var(--suave);font-size:.95rem}
+
+/* serviços */
+#servicos{position:relative}
+.grade-serv{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.serv{background:#fff;border:3px solid var(--tinta);border-radius:var(--raio);overflow:hidden;box-shadow:6px 6px 0 var(--tinta);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.serv:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--tinta)}
+.serv .foto{aspect-ratio:4/3;overflow:hidden;border-bottom:3px solid var(--tinta);background:var(--azul-claro);position:relative}
+.serv .foto img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.serv:hover .foto img{transform:scale(1.05)}
+.serv .foto .emoji{position:absolute;inset:0;display:grid;place-items:center;font-size:4.6rem;background:radial-gradient(circle at 30% 30%,#fff,var(--azul-claro))}
+.serv .tag{position:absolute;top:12px;left:12px;background:var(--laranja);color:#fff;font-family:'Fredoka',sans-serif;font-weight:600;font-size:.82rem;padding:3px 12px;border-radius:999px;border:2px solid var(--tinta)}
+.serv .tag.clinica{background:var(--azul)}
+.serv .corpo{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.serv h3{font-size:1.45rem;margin-bottom:6px}
+.serv p{color:var(--suave);flex:1;margin-bottom:16px}
+.serv .pedir{display:inline-flex;align-items:center;gap:8px;font-weight:800;color:var(--verde-wa-esc);align-self:flex-start}
+.serv .pedir svg{width:20px;height:20px}
+.serv .pedir:hover{text-decoration:underline}
+
+/* clínica */
+.clinica{background:var(--azul-noite);color:#D6E6FA;border-block:3px solid var(--tinta);position:relative;overflow:hidden}
+.clinica .container{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.clinica h2{color:#fff;font-size:clamp(2rem,4vw,2.8rem);margin-bottom:18px}
+.clinica h2 em{font-style:normal;color:var(--amarelo)}
+.clinica .etiqueta{background:var(--amarelo);border-color:var(--tinta);color:var(--tinta)}
+.clinica p{font-size:1.08rem;margin-bottom:14px}
+.clinica p b{color:#fff}
+.foto-vet{position:relative}
+.foto-vet img{width:100%;aspect-ratio:1;object-fit:cover;border:3px solid var(--tinta);border-radius:28px;box-shadow:8px 8px 0 #000}
+.foto-vet .cracha{position:absolute;left:-14px;bottom:26px;background:#fff;color:var(--tinta);border:3px solid var(--tinta);border-radius:18px;padding:12px 16px;box-shadow:4px 4px 0 var(--tinta);max-width:260px}
+.foto-vet .cracha b{display:block;font-family:'Fredoka',sans-serif;font-size:1.15rem}
+.foto-vet .cracha small{font-weight:700;color:var(--suave)}
+.batimento{display:flex;align-items:center;gap:14px;margin:26px 0 24px;background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.14);border-radius:18px;padding:12px 16px}
+.batimento .coracao{width:40px;height:40px;flex-shrink:0;color:var(--vermelho);animation:bate-coracao 1.1s ease-in-out infinite}
+@keyframes bate-coracao{0%,100%{transform:scale(1)}14%{transform:scale(1.22)}28%{transform:scale(1)}42%{transform:scale(1.15)}70%{transform:scale(1)}}
+.batimento svg.ecg{flex:1 1 0;min-width:0;width:100%;height:44px;overflow:visible}
+.batimento .linha{fill:none;stroke:#7FE3FF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:420;stroke-dashoffset:420;animation:ecg 2.2s linear infinite;filter:drop-shadow(0 0 4px rgba(127,227,255,.8))}
+@keyframes ecg{0%{stroke-dashoffset:420}70%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+.batimento span{font-weight:800;color:#fff;font-size:.95rem;line-height:1.3}
+.lista-check{list-style:none;margin:10px 0 30px;display:grid;gap:10px}
+.lista-check li{display:flex;gap:12px;align-items:flex-start;font-weight:700;color:#fff}
+.lista-check li::before{content:"✓";flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--azul);color:#fff;display:grid;place-items:center;font-size:.9rem;border:2px solid #000}
+.clinica .acoes{display:flex;flex-wrap:wrap;gap:14px}
+
+/* banho e tosa */
+.banho{background:var(--agua);border-bottom:3px solid var(--tinta);position:relative;overflow:hidden}
+.banho .container{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.banho .texto h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:16px}
+.banho .texto p{font-size:1.08rem;margin-bottom:14px}
+.banho .lista-check li{color:var(--tinta)}
+.banho .lista-check li::before{border-color:var(--tinta)}
+.galeria-banho{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+.galeria-banho img{width:100%;aspect-ratio:4/5;object-fit:cover;border:3px solid var(--tinta);border-radius:18px;box-shadow:5px 5px 0 var(--tinta)}
+.galeria-banho img:nth-child(2){transform:translateY(24px)}
+.banheira-box{position:relative;max-width:440px;margin:0 auto;width:100%}
+
+/* avaliações */
+.nota-geral{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin:-20px auto 44px;background:#fff;border:3px solid var(--tinta);border-radius:999px;padding:12px 26px;width:fit-content;max-width:100%;box-shadow:4px 4px 0 var(--tinta)}
+.nota-geral strong{font-family:'Fredoka',sans-serif;font-size:2.2rem;color:var(--tinta);line-height:1}
+.nota-geral .estrelas{font-size:1.4rem}
+.nota-geral span{font-weight:700;color:var(--suave)}
+.nota-geral .estrelas{color:#F5A300}
+.grade-dep{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.dep{background:#fff;border:3px solid var(--tinta);border-radius:var(--raio);padding:26px;box-shadow:6px 6px 0 var(--tinta);display:flex;flex-direction:column}
+.dep:nth-child(3n+2){background:var(--azul-claro)}
+.dep .estrelas{margin-bottom:10px}
+.dep blockquote{font-size:1.05rem;color:var(--tinta);font-weight:600;flex:1}
+.dep .quem{display:flex;align-items:center;gap:12px;margin-top:20px}
+.dep .av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:'Fredoka',sans-serif;font-weight:700;color:#fff;border:2px solid var(--tinta)}
+.dep .quem b{display:block;color:var(--tinta)}
+.dep .quem small{color:var(--suave);font-weight:600}
+.centro{text-align:center;margin-top:44px}
+
+/* passos */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:p}
+.passo{position:relative;background:#fff;border:3px solid var(--tinta);border-radius:var(--raio);padding:36px 26px 28px;box-shadow:6px 6px 0 var(--tinta);text-align:center}
+.passo::before{counter-increment:p;content:counter(p);position:absolute;top:-26px;left:50%;transform:translateX(-50%);width:52px;height:52px;border-radius:50%;background:var(--azul);color:#fff;border:3px solid var(--tinta);display:grid;place-items:center;font-family:'Fredoka',sans-serif;font-weight:700;font-size:1.5rem}
+.passo .big{font-size:2.6rem;margin:6px 0 10px}
+.passo h3{font-size:1.35rem;margin-bottom:8px}
+.passo p{color:var(--suave)}
+
+/* visita */
+.visita .container{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:stretch}
+.info{background:#fff;border:3px solid var(--tinta);border-radius:var(--raio);padding:32px;box-shadow:6px 6px 0 var(--tinta)}
+.info h2{font-size:2.1rem;margin-bottom:22px}
+.info-item{display:flex;gap:14px;margin-bottom:22px}
+.info-item .ic{width:46px;height:46px;flex-shrink:0;border-radius:14px;background:var(--azul-claro);border:3px solid var(--tinta);display:grid;place-items:center}
+.info-item .ic svg{width:22px;height:22px;color:var(--azul-esc)}
+.info-item b{display:block;color:var(--tinta);font-size:1.05rem}
+.info-item a{color:var(--azul-esc);font-weight:800}
+.info-item a:hover{text-decoration:underline}
+.horarios{width:100%;border-collapse:collapse;margin-top:6px;font-size:.98rem}
+.horarios td{padding:4px 0;border-bottom:1px dashed #D3E9F5}
+.horarios td:last-child{text-align:right;font-weight:700;color:var(--tinta)}
+.horarios tr.hoje td{color:var(--azul);font-weight:800}
+.mapa{border:3px solid var(--tinta);border-radius:var(--raio);overflow:hidden;box-shadow:6px 6px 0 var(--tinta);min-height:420px;background:#eee}
+.mapa iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+
+/* cta final */
+.cta-final{background:var(--amarelo);border-top:3px solid var(--tinta);padding:80px 0}
+.cta-final .container{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center}
+.cta-final .selo-logo{width:340px;max-width:100%}
+.cta-final .selo-logo img{width:100%;filter:drop-shadow(6px 8px 0 rgba(18,48,122,.25));animation:balanca 5s ease-in-out infinite}
+.cta-final h2{color:var(--azul-noite);font-size:clamp(2rem,4.5vw,3rem);margin-bottom:12px;text-shadow:3px 3px 0 #fff}
+.cta-final h2 span{color:var(--azul-esc)}
+.cta-final p{color:#2A3550;font-size:1.15rem;margin-bottom:26px;max-width:600px;font-weight:600}
+.cta-final .acoes{display:flex;flex-wrap:wrap;gap:14px}
+
+/* rodapé */
+footer{position:relative;background:var(--azul-noite);color:#C3D4F0;padding:44px 0 30px;font-size:.95rem}
+footer .container{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
+footer .marca span{color:#fff}
+footer .marca small{color:#9FB6DD}
+footer .marca img{height:62px}
+footer .redes{display:flex;gap:12px}
+footer .redes a{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.08);transition:background .2s}
+footer .redes a:hover{background:var(--azul)}
+footer .redes svg{width:22px;height:22px;color:#fff}
+.creditos{width:100%;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;margin-top:6px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:.88rem;color:#9FB6DD}
+.creditos a{color:var(--amarelo);font-weight:700}
+.creditos a:hover{text-decoration:underline}
+
+/* flutuantes */
+.wa-flutuante{position:fixed;right:20px;bottom:20px;z-index:60;width:62px;height:62px;border-radius:50%;background:var(--verde-wa);display:grid;place-items:center;border:3px solid var(--tinta);box-shadow:4px 4px 0 var(--tinta);transition:transform .2s}
+.wa-flutuante:hover{transform:scale(1.07)}
+.wa-flutuante svg{width:32px;height:32px;color:#fff}
+.wa-flutuante::after{content:"";position:absolute;inset:-3px;border-radius:50%;border:3px solid var(--verde-wa);animation:onda 2s infinite}
+@keyframes onda{to{transform:scale(1.5);opacity:0}}
+.topo-btn{position:fixed;right:28px;bottom:96px;z-index:60;width:46px;height:46px;border-radius:50%;background:#fff;border:3px solid var(--tinta);box-shadow:3px 3px 0 var(--tinta);display:grid;place-items:center;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s}
+.topo-btn.ver{opacity:1;pointer-events:auto;transform:none}
+.topo-btn svg{width:22px;height:22px;color:var(--azul-esc)}
+
+/* ---------- bichos animados ---------- */
+.bicho{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.bicho svg{display:block;width:100%;height:auto;overflow:visible}
+.balao{position:absolute;background:#fff;border:3px solid var(--tinta);border-radius:16px;padding:6px 12px;font-family:'Fredoka',sans-serif;font-weight:600;color:var(--tinta);font-size:1rem;white-space:nowrap;box-shadow:3px 3px 0 var(--tinta);opacity:0;transform:translateY(8px) scale(.8);transition:.25s;pointer-events:none;z-index:2}
+.balao::after{content:"";position:absolute;bottom:-9px;left:24px;width:14px;height:14px;background:#fff;border-right:3px solid var(--tinta);border-bottom:3px solid var(--tinta);transform:rotate(45deg)}
+.bicho.fala .balao{opacity:1;transform:none}
+.pisca{transform-box:fill-box;transform-origin:center;animation:pisca 4.5s infinite}
+@keyframes pisca{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+
+/* gatinho laranja espiando */
+.gato{position:absolute;right:7%;bottom:-17px;width:170px;z-index:3}
+.gato .balao{bottom:112%;left:-30px}
+.gato .rabo{transform-box:view-box;transform-origin:150px 104px;animation:rabo-gato 2.6s ease-in-out infinite}
+@keyframes rabo-gato{0%,100%{transform:rotate(-8deg)}50%{transform:rotate(14deg)}}
+.gato .orelha-e{transform-box:view-box;transform-origin:58px 36px;animation:orelha 6s infinite}
+@keyframes orelha{0%,86%,100%{transform:rotate(0)}89%{transform:rotate(-14deg)}92%{transform:rotate(0)}94%{transform:rotate(-10deg)}}
+.gato .cabeca{transform-box:view-box;transform-origin:90px 110px;animation:inclina 7s ease-in-out infinite}
+@keyframes inclina{0%,40%,100%{transform:rotate(0)}50%,70%{transform:rotate(-6deg)}}
+.gato.fala .cabeca{animation:none;transform:rotate(4deg) translateY(-4px)}
+
+/* cachorro na banheira */
+.banheira{position:relative}
+.banheira .balao{top:-8px;left:10px}
+.banheira .cao-banho{transform-box:view-box;transform-origin:170px 200px;animation:balanca-banho 3s ease-in-out infinite}
+@keyframes balanca-banho{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.banheira .orelha-e{transform-box:fill-box;transform-origin:top right;animation:orelha-cao 1.6s ease-in-out infinite}
+.banheira .orelha-d{transform-box:fill-box;transform-origin:top left;animation:orelha-cao 1.6s ease-in-out infinite reverse}
+@keyframes orelha-cao{0%,100%{transform:rotate(0)}50%{transform:rotate(8deg)}}
+.banheira .lingua{transform-box:fill-box;transform-origin:top center;animation:ofega .5s ease-in-out infinite alternate}
+@keyframes ofega{from{transform:scaleY(.8)}to{transform:scaleY(1.15)}}
+.banheira .gota{animation:pinga 1.2s linear infinite}
+.banheira .gota:nth-of-type(2){animation-delay:.4s}
+.banheira .gota:nth-of-type(3){animation-delay:.8s}
+@keyframes pinga{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(70px);opacity:0}}
+.banheira .bolha-s{transform-box:fill-box;transform-origin:center;animation:bolha-sobe 3.4s ease-in infinite}
+@keyframes bolha-sobe{0%{transform:translateY(0) scale(.4);opacity:0}15%{opacity:1}100%{transform:translateY(-150px) scale(1.1);opacity:0}}
+.banheira .espuma{transform-box:fill-box;transform-origin:center bottom;animation:espuma 2.4s ease-in-out infinite alternate}
+@keyframes espuma{from{transform:scaleY(1)}to{transform:scaleY(1.08)}}
+.banheira.fala .cao-banho{animation:chacoalha .12s linear 8}
+@keyframes chacoalha{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+
+/* cachorrinho dourado correndo no rodapé */
+.pista{position:absolute;left:0;right:0;top:-50px;height:50px;overflow:hidden;pointer-events:none;z-index:4}
+.corredor{position:absolute;top:3px;left:0;width:96px;animation:corre 16s linear infinite;pointer-events:none}
+@keyframes corre{0%{transform:translateX(-140px)}65%,100%{transform:translateX(calc(100vw + 40px))}}
+.corredor .corpo-c{animation:galope .3s ease-in-out infinite alternate}
+@keyframes galope{from{transform:translateY(0)}to{transform:translateY(-4px)}}
+.corredor .perna{transform-box:fill-box;transform-origin:top center;animation:passo .3s ease-in-out infinite alternate}
+.corredor .perna.b{animation-direction:alternate-reverse}
+@keyframes passo{from{transform:rotate(32deg)}to{transform:rotate(-32deg)}}
+.corredor .rabo-c{transform-box:fill-box;transform-origin:left bottom;animation:abana .2s infinite alternate}
+@keyframes abana{from{transform:rotate(-18deg)}to{transform:rotate(18deg)}}
+
+/* entrada */
+.revela{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.revela.ok{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.revela{opacity:1;transform:none}html{scroll-behavior:auto}.bolhas{display:none}}
+
+/* responsivo */
+@media (max-width:1060px){.menu{gap:18px}.menu a{font-size:.92rem}}
+@media (max-width:1000px){
+  .grade-serv,.grade-dep{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .hamburguer{display:flex}
+  .menu{position:fixed;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--creme);border-bottom:3px solid var(--tinta);padding:10px 16px 20px;transform:translateY(-120%);transition:transform .3s ease;z-index:-1;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+  .menu.aberto{transform:none}
+  .menu a{padding:14px 4px;border-bottom:2px dashed #D3E9F5;font-size:1.08rem}
+  .menu a:not(.btn)::after{display:none}
+  .menu .btn{margin-top:16px;border-bottom:3px solid var(--tinta);padding:14px}
+  .hero .container{grid-template-columns:minmax(0,1fr);padding:34px 0 56px;gap:18px;text-align:center}
+  .hero-visual{order:-1;width:min(380px,100%);margin:0 auto}
+  .hero p.lead{margin-inline:auto;font-size:1.08rem}
+  .hero h1{margin:14px 0}
+  .hero .ctas,.hero .mini{justify-content:center}
+  .status{position:relative;left:auto;transform:none;right:auto;bottom:auto;margin-top:18px;font-size:.85rem;white-space:nowrap}
+  .numeros .container{grid-template-columns:repeat(2,1fr)}
+  .numero:nth-child(2){border-right:0}
+  .numero:nth-child(-n+2){border-bottom:3px dashed #D3E9F5}
+  .clinica .container,.banho .container,.visita .container{grid-template-columns:minmax(0,1fr)}
+  .foto-vet{max-width:440px;margin:0 auto}
+  .foto-vet .cracha{left:10px}
+  .passos{grid-template-columns:1fr;gap:44px}
+  .cta-final .container{grid-template-columns:1fr;text-align:center}
+  .cta-final .selo-logo{width:280px;margin:0 auto}
+  .cta-final p{margin-inline:auto}
+  .cta-final .acoes{justify-content:center}
+  .gato{width:130px;right:16px;bottom:-13px}
+}
+@media (max-width:600px){
+  section{padding:64px 0}
+  .grade-serv,.grade-dep{grid-template-columns:1fr}
+  .btn{width:100%}
+  .hero .ctas{flex-direction:column}
+  .marca small{display:none}
+  .marca span{font-size:1.15rem}
+  .numero strong{font-size:1.8rem}
+  .info{padding:24px}
+  .mapa,.mapa iframe{min-height:320px}
+  .nota-geral{border-radius:22px}
+  footer .container{flex-direction:column;align-items:flex-start}
+  .pista{top:-42px;height:42px}
+  .corredor{width:78px;top:3px}
+  .creditos{padding-right:70px}
+  .selo-google{font-size:.8rem;white-space:nowrap;padding-right:12px}
+  .selo-google .estrelas{font-size:.85rem}
+  .galeria-banho img:nth-child(2){transform:translateY(16px)}
+}
+@media (max-width:380px){
+  .selo-google{white-space:normal;text-align:left;line-height:1.3}
+  .selo-google .estrelas{display:none}
+  .hero h1{font-size:2rem}
+  .btn{white-space:normal;padding:14px 18px}
+}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="container">
+    <a href="#inicio" class="marca" aria-label="Zootopet Pet Shop — início">
+      <img src="img/logo-sm.png" alt="Zootopet" width="300" height="137">
+      <span><small>Pet shop · Buritis, BH</small></span>
+    </a>
+    <button class="hamburguer" id="hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#banho">Banho e tosa</a>
+      <a href="#clinica">Veterinário</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#visite">Onde estamos</a>
+      <a href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Agendar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="bolhas" aria-hidden="true" id="bolhas"></div>
+  <div class="container">
+    <div>
+      <span class="selo-google">
+        <span class="g"><svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg></span>
+        <span class="estrelas" aria-hidden="true">★★★★★</span> 4,8 no Google · 110 avaliações
+      </span>
+      <h1>Seu pet em boas mãos, <span class="sub">sempre!</span></h1>
+      <p class="lead">No coração do Buritis, a Zootopet cuida do seu amigo com banho e tosa caprichados, atendimento veterinário e uma loja cheia de mimos. Tem cliente que vem há mais de 7 anos e não troca por nada.</p>
+      <div class="ctas">
+        <a href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
+        <a href="tel:+5531983976527" class="btn btn-branco"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><use href="#i-tel"/></svg>(31) 98397-6527</a>
+      </div>
+      <div class="mini">
+        <span>🛁 Banho e tosa</span><span>🩺 Veterinário</span><span>🛍️ Loja</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="nuvem"></div>
+      <img src="img/logo.png" alt="Logo da Zootopet: cachorrinho tomando banho na banheira com patinho de borracha" width="900" height="412" fetchpriority="high">
+      <div class="status" id="status" role="status"><span class="ponto"></span><span id="status-txt">Seg a sex 9h–18h · Sáb 9h–14h</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="faixa" aria-hidden="true">
+  <div class="trilho">
+    <span>Banho</span><span>Tosa</span><span>Atendimento veterinário</span><span>Rações</span><span>Petiscos</span><span>Lacinhos e gravatinhas</span><span>Coleiras e brinquedos</span><span>Buritis · BH</span>
+    <span>Banho</span><span>Tosa</span><span>Atendimento veterinário</span><span>Rações</span><span>Petiscos</span><span>Lacinhos e gravatinhas</span><span>Coleiras e brinquedos</span><span>Buritis · BH</span>
+  </div>
+</div>
+
+<section class="numeros" aria-label="Destaques">
+  <div class="container">
+    <div class="numero"><strong>+7</strong><span>anos de clientes fiéis</span></div>
+    <div class="numero"><strong>4,8 <small>★</small></strong><span>nota no Google</span></div>
+    <div class="numero"><strong>110</strong><span>avaliações de clientes</span></div>
+    <div class="numero"><strong>6</strong><span>dias por semana</span></div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="container">
+    <div class="titulo revela">
+      <span class="etiqueta">Tudo em um só lugar</span>
+      <h2>Do banho ao <em>lacinho no topete</em></h2>
+      <p>Aqui o seu pet toma banho, fica lindo, é cuidado pelo veterinário e ainda volta pra casa com petisco. Toque em um serviço e fale com a gente pelo WhatsApp.</p>
+    </div>
+    <div class="grade-serv">
+      <article class="serv revela">
+        <div class="foto"><span class="tag">Estética</span><img src="img/fotos/maltes.jpg" alt="Maltês branquinho de pelo longo com lacinho azul depois do banho" loading="lazy"></div>
+        <div class="corpo"><h3>Banho</h3><p>Banho com produtos certos para cada pelagem, secagem com calma e aquele cheirinho que dura. Pet limpinho e tutor feliz.</p>
+        <a class="pedir" href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Quero%20agendar%20um%20banho." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Agendar banho</a></div>
+      </article>
+      <article class="serv revela">
+        <div class="foto"><span class="tag">Estética</span><img src="img/fotos/lhasa-tosa.jpg" alt="Lhasa apso com tosa recém-feita na mesa de tosa" loading="lazy"></div>
+        <div class="corpo"><h3>Tosa</h3><p>Tosa do jeitinho que você pedir, com paciência de sobra, inclusive com os pets idosos.</p>
+        <a class="pedir" href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Quero%20agendar%20banho%20e%20tosa." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Agendar tosa</a></div>
+      </article>
+      <article class="serv revela">
+        <div class="foto"><span class="tag">Capricho</span><img src="img/fotos/dupla-gravatas.jpg" alt="Dois shih tzus com gravatinhas coloridas depois do banho" loading="lazy"></div>
+        <div class="corpo"><h3>Lacinhos e gravatinhas</h3><p>O toque final que faz sucesso nas fotos: lacinho, gravatinha e perfume. Seu pet sai daqui pronto para desfilar.</p>
+        <a class="pedir" href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Quero%20agendar%20um%20banho%20com%20lacinho." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Quero esse mimo</a></div>
+      </article>
+      <article class="serv revela">
+        <div class="foto"><span class="tag clinica">Veterinário</span><span class="emoji" aria-hidden="true">🩺</span></div>
+        <div class="corpo"><h3>Atendimento veterinário</h3><p>O Celso, nosso veterinário, cuida do seu pet com atenção e está sempre disponível para orientar o tutor.</p>
+        <a class="pedir" href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Gostaria%20de%20agendar%20um%20atendimento%20veterin%C3%A1rio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Agendar atendimento</a></div>
+      </article>
+      <article class="serv revela">
+        <div class="foto"><span class="tag">Loja</span><img src="img/fotos/fachada.jpg" alt="Fachada da Zootopet no Buritis com prateleiras de ração na entrada" loading="lazy"></div>
+        <div class="corpo"><h3>Rações e petiscos</h3><p>Rações de marcas conhecidas e petiscos que fazem festa. Passe na loja ou peça pelo WhatsApp.</p>
+        <a class="pedir" href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Quero%20saber%20sobre%20ra%C3%A7%C3%B5es%20e%20petiscos." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Fazer pedido</a></div>
+      </article>
+      <article class="serv revela">
+        <div class="foto"><span class="tag">Loja</span><span class="emoji" aria-hidden="true">🦴</span></div>
+        <div class="corpo"><h3>Acessórios e mimos</h3><p>Coleiras, guias, brinquedos e lacinhos para deixar o dia a dia do seu pet mais gostoso e cheio de estilo.</p>
+        <a class="pedir" href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Quero%20ver%20acess%C3%B3rios%20para%20o%20meu%20pet." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Ver opções</a></div>
+      </article>
+    </div>
+  </div>
+  <div class="bicho gato" id="gato" role="button" tabindex="0" aria-label="Gatinho, toque para ouvir"><span class="balao">Miau! 💙</span>
+<svg viewBox="0 0 180 122" aria-hidden="true">
+ <path class="rabo" d="M146 108 C176 100 176 62 160 48 C154 43 148 48 153 54 C164 68 160 92 140 98Z" fill="#F39A2B" stroke="#14233F" stroke-width="4" stroke-linejoin="round"/>
+ <path d="M160 60 l8 -4 M163 74 l9 -2 M160 88 l9 2" stroke="#D9771A" stroke-width="4" stroke-linecap="round"/>
+ <g class="cabeca">
+  <g class="orelha-e"><path d="M40 46 L48 6 L78 30Z" fill="#F39A2B" stroke="#14233F" stroke-width="4" stroke-linejoin="round"/><path d="M49 36 L52 18 L66 30Z" fill="#FF9AA8"/></g>
+  <path d="M102 30 L132 6 L140 46Z" fill="#F39A2B" stroke="#14233F" stroke-width="4" stroke-linejoin="round"/><path d="M114 30 L128 18 L131 36Z" fill="#FF9AA8"/>
+  <ellipse cx="90" cy="70" rx="58" ry="45" fill="#F39A2B" stroke="#14233F" stroke-width="4"/>
+  <ellipse cx="90" cy="92" rx="30" ry="20" fill="#FFF4DC"/>
+  <path d="M90 27 v12 M78 29 l3 10 M102 29 l-3 10 M36 62 l12 3 M144 62 l-12 3" stroke="#D9771A" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="54" cy="86" r="9" fill="#FF7F8E" opacity=".4"/><circle cx="126" cy="86" r="9" fill="#FF7F8E" opacity=".4"/>
+  <g class="pisca"><ellipse cx="68" cy="64" rx="13" ry="14" fill="#fff" stroke="#14233F" stroke-width="3"/><ellipse cx="112" cy="64" rx="13" ry="14" fill="#fff" stroke="#14233F" stroke-width="3"/>
+   <g class="pupila"><circle cx="68" cy="66" r="8" fill="#3DAE4F"/><circle cx="68" cy="66" r="4.5" fill="#14233F"/><circle cx="71" cy="62.5" r="2.4" fill="#fff"/></g>
+   <g class="pupila"><circle cx="112" cy="66" r="8" fill="#3DAE4F"/><circle cx="112" cy="66" r="4.5" fill="#14233F"/><circle cx="115" cy="62.5" r="2.4" fill="#fff"/></g></g>
+  <path d="M84 80 h12 l-6 7Z" fill="#FF6F86" stroke="#14233F" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M90 87 q-5 8 -12 3 M90 87 q5 8 12 3" fill="none" stroke="#14233F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M40 78 l-26 -4 M40 86 l-26 4 M140 78 l26 -4 M140 86 l26 4" stroke="#14233F" stroke-width="2.5" stroke-linecap="round"/>
+ </g>
+ <ellipse cx="58" cy="112" rx="19" ry="10" fill="#F39A2B" stroke="#14233F" stroke-width="4"/><path d="M52 107 v7 M60 107 v7" stroke="#14233F" stroke-width="2.5" stroke-linecap="round"/>
+ <ellipse cx="122" cy="112" rx="19" ry="10" fill="#F39A2B" stroke="#14233F" stroke-width="4"/><path d="M116 107 v7 M124 107 v7" stroke="#14233F" stroke-width="2.5" stroke-linecap="round"/>
+</svg></div>
+</section>
+
+<section class="banho" id="banho">
+  <div class="container">
+    <div class="texto revela">
+      <span class="etiqueta">Banho e tosa</span>
+      <h2>Nem todo banho <em>é igual</em></h2>
+      <p>Na Zootopet o banho é feito com calma, carinho e atenção a cada detalhe. Seu pet sai daqui limpinho, cheiroso, com o pelo bem cuidado e, se quiser, com lacinho ou gravatinha.</p>
+      <ul class="lista-check">
+        <li>Banho e tosa para pets de todos os tamanhos</li>
+        <li>Cuidado especial com pets idosos e medrosos</li>
+        <li>Acabamento caprichado com lacinhos e gravatinhas</li>
+      </ul>
+      <div class="galeria-banho">
+        <img src="img/fotos/branquinho.jpg" alt="Cachorrinho branco sorridente depois do banho, no cenário de fotos da Zootopet" loading="lazy">
+        <img src="img/fotos/shihtzu-rosa.jpg" alt="Shih tzu com lacinhos cor-de-rosa depois da tosa" loading="lazy">
+      </div>
+    </div>
+    <div class="banheira-box revela">
+      <div class="bicho banheira" id="banheira" role="button" tabindex="0" aria-label="Cachorrinho no banho, toque para ver"><span class="balao">Que cheirinho! 🛁</span>
+<svg viewBox="0 0 340 300" aria-hidden="true">
+ <path d="M318 0 v26 q0 14 -14 14 h-46" fill="none" stroke="#9AAFC4" stroke-width="8" stroke-linecap="round"/>
+ <path d="M226 40 h40 l-6 16 h-28Z" fill="#C9D6E4" stroke="#14233F" stroke-width="3.5" stroke-linejoin="round"/>
+ <g fill="#5BC4F2"><path class="gota" d="M236 62 q3 6 0 8 q-3 -2 0 -8Z"/><path class="gota" d="M246 62 q3 6 0 8 q-3 -2 0 -8Z"/><path class="gota" d="M256 62 q3 6 0 8 q-3 -2 0 -8Z"/></g>
+ <g class="cao-banho">
+  <ellipse cx="170" cy="212" rx="62" ry="34" fill="#B5672F" stroke="#14233F" stroke-width="4"/>
+  <g class="orelha-e"><ellipse cx="116" cy="138" rx="18" ry="38" transform="rotate(20 116 138)" fill="#6E3B19" stroke="#14233F" stroke-width="4"/></g>
+  <g class="orelha-d"><ellipse cx="224" cy="138" rx="18" ry="38" transform="rotate(-20 224 138)" fill="#6E3B19" stroke="#14233F" stroke-width="4"/></g>
+  <circle cx="170" cy="130" r="58" fill="#B5672F" stroke="#14233F" stroke-width="4"/>
+  <g fill="#fff" stroke="#9FD8EA" stroke-width="2.5"><circle cx="146" cy="80" r="15"/><circle cx="168" cy="72" r="18"/><circle cx="192" cy="80" r="15"/><circle cx="130" cy="92" r="10"/><circle cx="208" cy="92" r="10"/></g>
+  <circle cx="150" cy="80" r="3" fill="#fff"/>
+  <g class="pisca"><circle cx="150" cy="124" r="10" fill="#fff" stroke="#14233F" stroke-width="2.5"/><circle cx="190" cy="124" r="10" fill="#fff" stroke="#14233F" stroke-width="2.5"/><circle cx="151" cy="125" r="6" fill="#4A2810"/><circle cx="191" cy="125" r="6" fill="#4A2810"/><circle cx="153" cy="122" r="2.2" fill="#fff"/><circle cx="193" cy="122" r="2.2" fill="#fff"/></g>
+  <circle cx="132" cy="148" r="9" fill="#FF8C8C" opacity=".35"/><circle cx="208" cy="148" r="9" fill="#FF8C8C" opacity=".35"/>
+  <ellipse cx="170" cy="154" rx="28" ry="20" fill="#F3D7AE" stroke="#14233F" stroke-width="3"/>
+  <path class="lingua" d="M161 166 h18 v12 a9 9 0 0 1 -18 0Z" fill="#FF6F86" stroke="#14233F" stroke-width="2.5"/>
+  <ellipse cx="170" cy="144" rx="12" ry="8" fill="#3B1F0E"/>
+  <path d="M170 152 v9 M170 161 q-9 7 -16 0 M170 161 q9 7 16 0" fill="none" stroke="#14233F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M132 184 q38 16 76 0" fill="none" stroke="#14233F" stroke-width="13" stroke-linecap="round"/><path d="M132 184 q38 16 76 0" fill="none" stroke="#2F6FD6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M164 194 h12 l-2 6 a4 4 0 1 1 -2 6 h-4 a4 4 0 1 1 -2 -6Z" fill="#FFD21F" stroke="#14233F" stroke-width="2"/>
+ </g>
+ <path d="M34 200 H306 L292 262 Q288 280 268 280 H72 Q52 280 48 262Z" fill="#fff" stroke="#14233F" stroke-width="4" stroke-linejoin="round"/>
+ <path d="M52 236 H288" stroke="#5BC4F2" stroke-width="8" stroke-linecap="round"/>
+ <path d="M58 256 H282" stroke="#FFD21F" stroke-width="6" stroke-linecap="round"/>
+ <rect x="24" y="190" width="292" height="18" rx="9" fill="#BFE9FA" stroke="#14233F" stroke-width="4"/>
+ <circle cx="84" cy="288" r="8" fill="#C9D6E4" stroke="#14233F" stroke-width="3"/><circle cx="256" cy="288" r="8" fill="#C9D6E4" stroke="#14233F" stroke-width="3"/>
+ <g class="espuma" fill="#fff" stroke="#9FD8EA" stroke-width="2.5"><circle cx="58" cy="196" r="16"/><circle cx="80" cy="188" r="20"/><circle cx="106" cy="192" r="17"/><circle cx="256" cy="190" r="19"/><circle cx="280" cy="196" r="16"/><circle cx="300" cy="200" r="12"/><circle cx="40" cy="202" r="11"/></g>
+ <ellipse cx="136" cy="198" rx="17" ry="10" fill="#B5672F" stroke="#14233F" stroke-width="4"/><ellipse cx="204" cy="198" rx="17" ry="10" fill="#B5672F" stroke="#14233F" stroke-width="4"/>
+ <g transform="translate(262 158)"><ellipse cx="14" cy="24" rx="18" ry="12" fill="#FFD23F" stroke="#14233F" stroke-width="3"/><circle cx="20" cy="8" r="10" fill="#FFD23F" stroke="#14233F" stroke-width="3"/><path d="M29 8 l9 2 -9 4Z" fill="#FF8C1A" stroke="#14233F" stroke-width="2" stroke-linejoin="round"/><circle cx="22" cy="6" r="2" fill="#14233F"/></g>
+ <circle class="bolha-s" cx="70" cy="170" r="9" fill="rgba(255,255,255,.55)" stroke="#7CCBE0" stroke-width="2" style="animation-delay:0s"/><circle class="bolha-s" cx="110" cy="160" r="7" fill="rgba(255,255,255,.55)" stroke="#7CCBE0" stroke-width="2" style="animation-delay:0.9s"/><circle class="bolha-s" cx="250" cy="165" r="10" fill="rgba(255,255,255,.55)" stroke="#7CCBE0" stroke-width="2" style="animation-delay:1.7s"/><circle class="bolha-s" cx="285" cy="172" r="7" fill="rgba(255,255,255,.55)" stroke="#7CCBE0" stroke-width="2" style="animation-delay:0.5s"/><circle class="bolha-s" cx="150" cy="150" r="6" fill="rgba(255,255,255,.55)" stroke="#7CCBE0" stroke-width="2" style="animation-delay:2.3s"/><circle class="bolha-s" cx="220" cy="150" r="8" fill="rgba(255,255,255,.55)" stroke="#7CCBE0" stroke-width="2" style="animation-delay:2.9s"/><circle class="bolha-s" cx="95" cy="180" r="5" fill="rgba(255,255,255,.55)" stroke="#7CCBE0" stroke-width="2" style="animation-delay:1.3s"/>
+</svg></div>
+      <div class="centro" style="margin-top:22px">
+        <a href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Quero%20agendar%20banho%20e%20tosa." class="btn btn-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Agendar banho e tosa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="clinica" id="clinica">
+  <div class="container">
+    <div class="foto-vet revela">
+      <img src="img/fotos/shihtzu-lacos.jpg" alt="Shih tzu preto e branco feliz, cliente da Zootopet" loading="lazy">
+      <div class="cracha"><b>“Minha turminha ama o Tio Celso”</b><small>Hanna P. · cliente há mais de 7 anos</small></div>
+    </div>
+    <div class="texto revela">
+      <span class="etiqueta">Atendimento veterinário</span>
+      <h2>Cuidado de quem <em>conhece o seu pet</em></h2>
+      <p>Além do banho e tosa, a Zootopet tem atendimento veterinário. O <b>Celso</b>, nosso veterinário, é tão querido que os clientes chamam de <b>Tio Celso</b>, e os pets chegam abanando o rabo.</p>
+      <p>Nas avaliações, os tutores falam de uma equipe atenciosa, carinhosa e sempre disponível para ajudar da melhor maneira.</p>
+      <div class="batimento" aria-hidden="true">
+        <svg class="coracao" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.6-10-9.3C.3 8.4 2.2 4 6.2 4c2.3 0 3.8 1.3 4.8 2.8C12 5.3 13.5 4 15.8 4c4 0 5.9 4.4 4.2 7.7C19.5 16.4 12 21 12 21z"/></svg>
+        <svg class="ecg" viewBox="0 0 300 44" preserveAspectRatio="none"><path class="linha" d="M0 26 H70 L80 26 L88 10 L96 38 L106 2 L116 42 L124 26 H170 L178 18 L186 26 H300"/></svg>
+        <span>Cuidando da saúde<br>do seu melhor amigo</span>
+      </div>
+      <ul class="lista-check">
+        <li>Atendimento veterinário no mesmo lugar do banho</li>
+        <li>Orientação clara e próxima para o tutor</li>
+        <li>Clientes que confiam na equipe há anos</li>
+      </ul>
+      <div class="acoes">
+        <a href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Gostaria%20de%20agendar%20um%20atendimento%20veterin%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Agendar atendimento</a>
+        <a href="https://www.instagram.com/zootopet/" class="btn btn-branco" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><use href="#i-insta"/></svg>@zootopet</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="como-agendar">
+  <div class="container">
+    <div class="titulo revela">
+      <span class="etiqueta">Simples assim</span>
+      <h2>Agendar é <em>rapidinho</em></h2>
+      <p>Três passos e o seu pet já tem horário marcado.</p>
+    </div>
+    <div class="passos">
+      <div class="passo revela"><div class="big" aria-hidden="true">💬</div><h3>Chame no WhatsApp</h3><p>Mande uma mensagem para (31) 98397-6527. Nosso atendimento é todo pelo WhatsApp.</p></div>
+      <div class="passo revela"><div class="big" aria-hidden="true">📅</div><h3>Escolha o horário</h3><p>Banho, tosa ou veterinário: de segunda a sábado, a gente encontra o melhor dia para você.</p></div>
+      <div class="passo revela"><div class="big" aria-hidden="true">🐾</div><h3>Traga seu pet</h3><p>Estamos na Av. Aggeo Pio Sobrinho, 295, loja 5, no Buritis. É só chegar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="avaliacoes" style="padding-top:0">
+  <div class="container">
+    <div class="titulo revela">
+      <span class="etiqueta">Quem conhece, confia</span>
+      <h2>O que dizem os <em>tutores</em></h2>
+    </div>
+    <div class="nota-geral revela">
+      <strong>4,8</strong><span class="estrelas" aria-label="5 estrelas">★★★★★</span><span>110 avaliações no Google</span>
+    </div>
+    <div class="grade-dep">
+      <figure class="dep revela"><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>Sou cliente há mais de 7 anos. Meus cães sempre foram atendidos com o maior carinho. Equipe sempre muito atenciosa e carinhosa. E o Celso, que é o veterinário, sempre disponível a nos ajudar da melhor maneira. Os indico de olhos fechados!</blockquote><figcaption class="quem"><span class="av" style="background:var(--azul)">H</span><span><b>Hanna P.</b><small>Local Guide · Google</small></span></figcaption></figure>
+      <figure class="dep revela"><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>Atendimento excelente, deixaram meu neném a coisa mais fofinha desse mundo. Muito cuidado e atenção em cada momento. Profissionais incríveis.</blockquote><figcaption class="quem"><span class="av" style="background:var(--laranja)">F</span><span><b>Floricena F.</b><small>Tutora · Google</small></span></figcaption></figure>
+      <figure class="dep revela"><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>Já são 5 anos levando o Joaquim na Zootopet! Só tenho a agradecer pela excelência no atendimento.</blockquote><figcaption class="quem"><span class="av" style="background:var(--azul-esc)">C</span><span><b>Camila L.</b><small>Tutora · Google</small></span></figcaption></figure>
+      <figure class="dep revela"><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>Tenho um pequinês idoso e não tenho medo de levá-lo pra banho e tosa lá.</blockquote><figcaption class="quem"><span class="av" style="background:var(--laranja)">★</span><span><b>Cliente Zootopet</b><small>Avaliação · Google</small></span></figcaption></figure>
+      <figure class="dep revela"><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>Ótimo atendimento e dedicação com meu pet. O Celso e todo o time são ótimos!</blockquote><figcaption class="quem"><span class="av" style="background:var(--azul)">★</span><span><b>Cliente Zootopet</b><small>Avaliação · Google</small></span></figcaption></figure>
+      <figure class="dep revela"><div class="estrelas" aria-label="5 estrelas">★★★★★</div><blockquote>Excelente trabalho, profissionais super atenciosos!</blockquote><figcaption class="quem"><span class="av" style="background:var(--azul-esc)">★</span><span><b>Cliente Zootopet</b><small>Avaliação · Google</small></span></figcaption></figure>
+    </div>
+    <div class="centro revela">
+      <a href="https://www.google.com/maps/place/Zootopet/@-19.9756288,-43.9773685,17z/data=!4m8!3m7!1s0xa6bd7e7a1915d9:0x2da19423efe07613!8m2!3d-19.9756288!4d-43.9773685!9m1!1b1" class="btn btn-branco" target="_blank" rel="noopener">Ver todas as avaliações no Google</a>
+    </div>
+  </div>
+</section>
+
+<section class="visita" id="visite" style="padding-top:0">
+  <div class="container">
+    <div class="info revela">
+      <span class="etiqueta">Venha nos visitar</span>
+      <h2>Onde estamos</h2>
+      <div class="info-item">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><use href="#i-pin"/></svg></div>
+        <div><b>Endereço</b>Av. Aggeo Pio Sobrinho, 295 · Loja 5<br>Buritis · Belo Horizonte/MG · 30575-834<br><a href="https://www.google.com/maps/dir/?api=1&destination=Zootopet%2C%20Av.%20Aggeo%20Pio%20Sobrinho%2C%20295%20-%20Buritis%2C%20Belo%20Horizonte" target="_blank" rel="noopener">Traçar rota até a Zootopet →</a></div>
+      </div>
+      <div class="info-item">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><use href="#i-tel"/></svg></div>
+        <div><b>WhatsApp e telefone</b><a href="https://wa.me/5531983976527" target="_blank" rel="noopener">(31) 98397-6527</a> · atendimento pelo WhatsApp</div>
+      </div>
+      <div class="info-item">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><use href="#i-relogio"/></svg></div>
+        <div style="flex:1"><b>Horário de atendimento</b>
+          <table class="horarios" id="horarios">
+            <tr data-d="1"><td>Segunda-feira</td><td>09h às 18h</td></tr>
+            <tr data-d="2"><td>Terça-feira</td><td>09h às 18h</td></tr>
+            <tr data-d="3"><td>Quarta-feira</td><td>09h às 18h</td></tr>
+            <tr data-d="4"><td>Quinta-feira</td><td>09h às 18h</td></tr>
+            <tr data-d="5"><td>Sexta-feira</td><td>09h às 18h</td></tr>
+            <tr data-d="6"><td>Sábado</td><td>09h às 14h</td></tr>
+            <tr data-d="0"><td>Domingo</td><td>Fechado</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="mapa revela">
+      <iframe title="Mapa da localização da Zootopet no Buritis" src="https://maps.google.com/maps?q=Zootopet%2C%20Av.%20Aggeo%20Pio%20Sobrinho%2C%20295%20-%20Buritis%2C%20Belo%20Horizonte%20-%20MG&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <div class="selo-logo"><img src="img/logo.png" alt="" loading="lazy" width="900" height="412"></div>
+    <div>
+      <h2>Seu pet merece um <span>banho de carinho</span></h2>
+      <p>Banho, tosa, veterinário ou aquela ração que acabou: fale agora com a Zootopet e deixe o cuidado com a gente.</p>
+      <div class="acoes">
+        <a href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="btn btn-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+        <a href="tel:+5531983976527" class="btn btn-branco"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><use href="#i-tel"/></svg>Ligar agora</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="pista" aria-hidden="true"><div class="corredor"><svg viewBox="0 0 120 64"><g class="corpo-c">
+ <rect class="perna b" x="30" y="36" width="9" height="22" rx="4.5" fill="#6E3B19" stroke="#14233F" stroke-width="3"/><rect class="perna" x="74" y="36" width="9" height="22" rx="4.5" fill="#6E3B19" stroke="#14233F" stroke-width="3"/>
+ <g class="rabo-c"><path d="M22 30 q-12 -6 -14 -18" fill="none" stroke="#14233F" stroke-width="9" stroke-linecap="round"/><path d="M22 30 q-12 -6 -14 -18" fill="none" stroke="#B5672F" stroke-width="4" stroke-linecap="round"/></g>
+ <ellipse cx="55" cy="34" rx="36" ry="15" fill="#B5672F" stroke="#14233F" stroke-width="3.5"/>
+ <path d="M84 40 h10" stroke="#2F6FD6" stroke-width="5" stroke-linecap="round"/>
+ <rect class="perna" x="38" y="38" width="9" height="22" rx="4.5" fill="#B5672F" stroke="#14233F" stroke-width="3"/><rect class="perna b" x="80" y="38" width="9" height="22" rx="4.5" fill="#B5672F" stroke="#14233F" stroke-width="3"/>
+ <circle cx="94" cy="20" r="15" fill="#B5672F" stroke="#14233F" stroke-width="3.5"/>
+ <ellipse cx="86" cy="20" rx="6" ry="12" transform="rotate(-30 86 20)" fill="#6E3B19" stroke="#14233F" stroke-width="3"/>
+ <ellipse cx="108" cy="24" rx="8" ry="6" fill="#F3D7AE" stroke="#14233F" stroke-width="2.5"/><circle cx="114" cy="22" r="3" fill="#14233F"/>
+ <circle cx="98" cy="16" r="2.6" fill="#14233F"/>
+ <path d="M104 30 q2 8 6 4" fill="#FF6F86" stroke="#14233F" stroke-width="2"/>
+</g></svg></div></div>
+  <div class="container">
+    <a href="#inicio" class="marca" aria-label="Zootopet — voltar ao início">
+      <img src="img/logo-sm.png" alt="Zootopet" width="300" height="137">
+    </a>
+    <div>Av. Aggeo Pio Sobrinho, 295 · Loja 5 · Buritis · Belo Horizonte/MG<br>(31) 98397-6527 · Seg a sex 9h–18h · Sáb 9h–14h</div>
+    <div class="redes">
+      <a href="https://www.instagram.com/zootopet/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-insta"/></svg></a>
+      <a href="https://wa.me/5531983976527" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></a>
+    </div>
+    <div class="creditos">
+      <span>© <span id="ano">2026</span> Zootopet Pet Shop. Todos os direitos reservados.</span>
+      <span>Desenvolvido por <a href="https://mesquitasaas.online/" target="_blank" rel="noopener">Mesquita SaaS</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5531983976527?text=Ol%C3%A1%2C%20Zootopet!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="wa-flutuante" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></a>
+<button class="topo-btn" id="topo-btn" aria-label="Voltar ao topo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.81 11.81 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></symbol>
+  <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z" stroke-linejoin="round"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+</svg>
+
+<script>
+(function(){
+  var btn=document.getElementById('hamburguer'), menu=document.getElementById('menu');
+  function fecha(){menu.classList.remove('aberto');btn.setAttribute('aria-expanded','false');btn.setAttribute('aria-label','Abrir menu');}
+  btn.addEventListener('click',function(){var a=menu.classList.toggle('aberto');btn.setAttribute('aria-expanded',a);btn.setAttribute('aria-label',a?'Fechar menu':'Abrir menu');});
+  menu.querySelectorAll('a').forEach(function(l){l.addEventListener('click',fecha);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')fecha();});
+
+  var topo=document.getElementById('topo-btn');
+  window.addEventListener('scroll',function(){topo.classList.toggle('ver',window.scrollY>600);},{passive:true});
+  topo.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  // aberto agora (horário de Brasília): seg-sex 9h-18h, sáb 9h-14h
+  var agora=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'}));
+  var d=agora.getDay(), m=agora.getHours()*60+agora.getMinutes();
+  var ini=540, fim=d===6?840:1080, aberto=d!==0&&m>=ini&&m<fim;
+  var st=document.getElementById('status'), tx=document.getElementById('status-txt');
+  if(aberto){st.classList.add('aberto');tx.textContent='Aberto agora · até '+(d===6?'14h':'18h');}
+  else{st.classList.add('fechado');
+    if(d===0||(d===6&&m>=fim))tx.textContent='Fechado · abre segunda às 9h';
+    else if(m<ini)tx.textContent='Fechado · abre hoje às 9h';
+    else tx.textContent='Fechado · abre amanhã às 9h';}
+  var linha=document.querySelector('#horarios tr[data-d="'+d+'"]'); if(linha)linha.classList.add('hoje');
+  document.getElementById('ano').textContent=agora.getFullYear();
+
+  // bolhas de sabão no topo
+  var caixa=document.getElementById('bolhas');
+  if(caixa && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var n=window.innerWidth<600?9:16;
+    for(var i=0;i<n;i++){var b=document.createElement('i'),t=14+Math.random()*40;
+      b.style.cssText='left:'+(Math.random()*100).toFixed(1)+'%;width:'+t.toFixed(0)+'px;height:'+t.toFixed(0)+'px;animation-duration:'+(9+Math.random()*9).toFixed(1)+'s;animation-delay:-'+(Math.random()*16).toFixed(1)+'s';
+      caixa.appendChild(b);}
+  }
+
+  // olhos do gato seguem o mouse; toque mostra o balão
+  var pupilas=document.querySelectorAll('#gato .pupila');
+  window.addEventListener('pointermove',function(e){
+    pupilas.forEach(function(p){
+      var r=p.getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height/2;
+      var dx=e.clientX-cx, dy=e.clientY-cy, dist=Math.hypot(dx,dy)||1, k=Math.min(5,dist/40);
+      p.setAttribute('transform','translate('+(dx/dist*k).toFixed(2)+' '+(dy/dist*k).toFixed(2)+')');
+    });
+  },{passive:true});
+  document.querySelectorAll('.bicho').forEach(function(b){
+    var t;
+    function fala(){b.classList.add('fala');clearTimeout(t);t=setTimeout(function(){b.classList.remove('fala');},1600);}
+    b.addEventListener('click',fala);
+    b.addEventListener('mouseenter',fala);
+    b.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fala();}});
+  });
+
+  var els=document.querySelectorAll('.revela');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('ok');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e);});
+  } else els.forEach(function(e){e.classList.add('ok');});
+})();
+</script>
+</body>
+</html>
